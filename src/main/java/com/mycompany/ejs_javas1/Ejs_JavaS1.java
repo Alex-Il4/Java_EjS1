@@ -1,17 +1,54 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 package com.mycompany.ejs_javas1;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
-/**
- *
- * @author alex
- */
 public class Ejs_JavaS1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        
+        Scanner data = new Scanner(System.in);
+        int ejOption = 0;
+        boolean bucle = true;
+
+        do {
+            System.out.println("\n--- Seleccione un Ejercicio (1-9) ---");
+            System.out.println("1. Ejercicio 1 (Cajero Automatico)");
+            System.out.println("2. Ejercicio 2 (Calculadora Avanzada)");
+            System.out.println("0. Salir");
+            System.out.print("Ingrese su opcion: ");
+            
+            try {
+                // Leer la opción
+                ejOption = data.nextInt(); 
+
+                switch (ejOption) {
+                    case 1:
+                        ejercicio1 ej1 = new ejercicio1(); 
+                        ej1.cajero();
+                        break;
+                    case 2:
+                        ejercicio2 ej2 = new ejercicio2();
+                        ej2.calculadora();
+                        break;
+                    case 0:
+                        System.out.println("\nSaliendo del programa.");
+                        bucle = false; // Detiene el bucle
+                        break;
+                    default:
+                        System.out.println("\nIngrese opcion valida.");
+                        break;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("\n ERROR: Entrada no valida. Por favor, ingrese un numero.");
+                data.next();
+                ejOption = -1; // Forar la repetición del bucle
+            }
+
+        } while (bucle);
+        // Cierra el Scanner
+        data.close();
     }
 }
