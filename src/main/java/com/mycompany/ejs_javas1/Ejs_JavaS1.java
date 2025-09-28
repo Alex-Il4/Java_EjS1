@@ -37,6 +37,10 @@ public class Ejs_JavaS1 {
                         ejercicio3 ej3 = new ejercicio3();
                         ej3.numPrimos();
                         break;
+                    case 4:
+                        ejercicio4 ej4 = new ejercicio4();
+                        ej4.fibonacci();
+                        break;
                     case 0:
                         System.out.println("\nSaliendo del programa.");
                         bucle = false; // Detiene el bucle
