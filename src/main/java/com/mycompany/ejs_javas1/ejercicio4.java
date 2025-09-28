@@ -3,6 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.ejs_javas1;
+/**
+ *
+ * @author alex
+ */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -14,7 +18,7 @@ public class ejercicio4 {
         int option = 0;
         boolean bucle = true;
         
-        System.out.println("--- EJERCICIO 4: SERIE FIBONACCI ---\n");
+        System.out.println("Ejercicio 4: SERIE FIBONACCI\n");
         
         do {
             menu();

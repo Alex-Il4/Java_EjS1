@@ -3,6 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.ejs_javas1;
+/**
+ *
+ * @author alex
+ */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -14,7 +18,7 @@ public class Ejs_JavaS1 {
         boolean bucle = true;
 
         do {
-            System.out.println("\n--- Seleccione un Ejercicio (1-9) ---");
+            System.out.println("\nSeleccione un Ejercicio");
             System.out.println("1. Ejercicio 1 (Cajero Automatico)");
             System.out.println("2. Ejercicio 2 (Calculadora Avanzada)");
             System.out.println("2. Ejercicio 3 (Numeros primos)");
@@ -71,7 +75,7 @@ public class Ejs_JavaS1 {
                         break;
                 }
             } catch (InputMismatchException e) {
-                System.out.println("\n ERROR: Entrada no valida. Por favor, ingrese un numero.");
+                System.out.println("\n Entrada no valida. Por favor, ingrese un numero.");
                 data.next();
                 ejOption = -1; // Forzar la repetición del bucle
             }
