@@ -33,6 +33,10 @@ public class Ejs_JavaS1 {
                         ejercicio2 ej2 = new ejercicio2();
                         ej2.calculadora();
                         break;
+                    case 3:
+                        ejercicio3 ej3 = new ejercicio3();
+                        ej3.numPrimos();
+                        break;
                     case 0:
                         System.out.println("\nSaliendo del programa.");
                         bucle = false; // Detiene el bucle
