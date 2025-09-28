@@ -54,6 +54,10 @@ public class Ejs_JavaS1 {
                         ejercicio6 ej6 = new ejercicio6();
                         ej6.estadisticas();
                         break;
+                    case 7:
+                        ejercicio7 ej7 = new ejercicio7();
+                        ej7.adivinar();
+                        break;
                     case 0:
                         System.out.println("\nSaliendo del programa.");
                         bucle = false; // Detiene el bucle
