@@ -41,6 +41,10 @@ public class Ejs_JavaS1 {
                         ejercicio4 ej4 = new ejercicio4();
                         ej4.fibonacci();
                         break;
+                    case 5:
+                        ejercicio5 ej5 = new ejercicio5();
+                        ej5.factorial();
+                        break;
                     case 0:
                         System.out.println("\nSaliendo del programa.");
                         bucle = false; // Detiene el bucle
