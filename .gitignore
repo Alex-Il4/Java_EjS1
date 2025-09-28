@@ -1,0 +1,28 @@
+# Archivos y Directorios Generados por Java/JVM
+##############################################
+*.class
+*.jar
+*.war
+*.log
+/bin/
+
+# Directorios de Compilación/Salida de Maven y NetBeans
+#######################################################
+/target/
+/build/
+/dist/
+
+# Archivos de Configuración Local de NetBeans 
+#########################################################
+# Directorio privado de configuraciones locales del usuario
+/nbproject/private/
+
+# Configuraciones y archivos temporales de IDEs comunes
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Archivos Temporales de Sistemas Operativos
+###########################################
+Thumbs.db
