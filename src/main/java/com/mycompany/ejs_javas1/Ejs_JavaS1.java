@@ -17,11 +17,16 @@ public class Ejs_JavaS1 {
             System.out.println("\n--- Seleccione un Ejercicio (1-9) ---");
             System.out.println("1. Ejercicio 1 (Cajero Automatico)");
             System.out.println("2. Ejercicio 2 (Calculadora Avanzada)");
+            System.out.println("2. Ejercicio 3 (Numeros primos)");
+            System.out.println("2. Ejercicio 4 (Serie fibonacci)");
+            System.out.println("2. Ejercicio 5 (Faactorial)");
+            System.out.println("2. Ejercicio 6 (Estadistica Notas)");
+            System.out.println("2. Ejercicio 7 (Adivinar numero)");
+            System.out.println("2. Ejercicio 8 (Sistema inventario)");
             System.out.println("0. Salir");
             System.out.print("Ingrese su opcion: ");
             
             try {
-                // Leer la opción
                 ejOption = data.nextInt(); 
 
                 switch (ejOption) {
@@ -45,6 +50,10 @@ public class Ejs_JavaS1 {
                         ejercicio5 ej5 = new ejercicio5();
                         ej5.factorial();
                         break;
+                    case 6:
+                        ejercicio6 ej6 = new ejercicio6();
+                        ej6.estadisticas();
+                        break;
                     case 0:
                         System.out.println("\nSaliendo del programa.");
                         bucle = false; // Detiene el bucle
@@ -56,7 +65,7 @@ public class Ejs_JavaS1 {
             } catch (InputMismatchException e) {
                 System.out.println("\n ERROR: Entrada no valida. Por favor, ingrese un numero.");
                 data.next();
-                ejOption = -1; // Forar la repetición del bucle
+                ejOption = -1; // Forzar la repetición del bucle
             }
 
         } while (bucle);
